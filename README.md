@@ -42,9 +42,7 @@ The data is derived from the [**FRED-QD database**](https://research.stlouisfed.
 
 ## Files in the Repository
 - **main.R**: The R script for forecasting and analysis.
-- **Project_1.pdf**: Detailed project description and results.
-- **224733 Chang-Chia Chen.pdf**: Extended project report.
-
+  
 ## Conclusion
 The project explores different models for GDP forecasting and highlights the strengths of each under various economic conditions. It also suggests future improvements, such as incorporating more real-time variables.
 
