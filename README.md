@@ -9,7 +9,7 @@ This project forecasts the US real GDP growth using autoregression (AR) and vect
 - **Tools**: R language for statistical modeling and visualization.
 
 ## Data Sources
-The data is derived from the **FRED-QD database** from the Federal Reserve Bank of St. Louis. The key variables used include:
+The data is derived from the [**FRED-QD database**](https://research.stlouisfed.org/econ/mccracken/fred-databases/) from the Federal Reserve Bank of St. Louis. The key variables used include:
 - GDPC1 (Real GDP)
 - CPIAUCSL (Consumer Price Index)
 - M1REAL (Real M1 Money Stock)
