@@ -11,9 +11,13 @@ This project forecasts the US real GDP growth using autoregression (AR) and vect
 ## Data Sources
 The data is derived from the [**FRED-QD database**](https://research.stlouisfed.org/econ/mccracken/fred-databases/) from the Federal Reserve Bank of St. Louis. The key variables used include:
 - GDPC1 (Real GDP)
+  - %GDPC1 (Real GDP growth)
 - CPIAUCSL (Consumer Price Index)
+  - %CPIAUCSL (Consumer Price Index growth)
 - M1REAL (Real M1 Money Stock)
-- S&P 500 Index
+  - %M1REAL (Real M1 Money Stock growth)
+- S&P 500 (S&P 500 Index)
+  - %S&P 500 (S&P 500 Index growth)
 - CUMFNS (Capacity Utilization Rate)
 - UNRATESTx (Unemployment Rate less than 27 weeks)
 - FEDFUNDS (Federal Funds Rate)
