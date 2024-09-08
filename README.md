@@ -27,7 +27,7 @@ Data is sourced from the **FRED-QD** and **FRED-MD** databases at the [Federal R
 ### Results (Project 1)
 - VAR models generally outperformed AR models in periods of economic fluctuation.
 - Models struggled during the COVID-19 pandemic due to unexpected shocks.
-![residuals of AR and VAR model](P2/plot/res_AR.pdf)
+![[residuals of AR and VAR model](P2/plot/res_AR.pdf)](https://github.com/Jeffchen00/GDP-Growth-Forecast/blob/9cf2e9efbbcc93d8c9e68566a5619f3f90908de4/P2/plot/res_AR.pdf)
 
 ## Project 2: Machine Learning Approach
 1. **Regression Trees**: A tree-based model that uses economic variables to predict GDP growth.
