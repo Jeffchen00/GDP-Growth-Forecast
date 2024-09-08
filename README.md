@@ -31,6 +31,7 @@ The data is derived from the [**FRED-QD database**](https://research.stlouisfed.
 4. **Akaike Information Criterion (AIC)**: Used to select the best lag-order for the VAR model.
 
 ## Results
+All variables are assumed to be stationary, i.e., without any trend or seasonality.
 - The AR(1) model performed well for relatively stable periods, while the VAR models were more effective during economic fluctuations.
 - The VAR(1) and VAR(p) models struggled during extreme events like the 2020 COVID-19 pandemic due to exaggerated fluctuations in variables.
   ![AR(1) results](2.png)
