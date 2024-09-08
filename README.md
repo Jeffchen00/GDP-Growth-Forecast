@@ -46,6 +46,7 @@ Data is sourced from the **FRED-QD** and **FRED-MD** databases at the [Federal R
 1. **U-MIDAS**: Forecasts GDP growth using monthly economic data while considering lagged effects of both quarterly and monthly variables.
 2. **Random Forest (with MIDAS variables)**: Uses monthly frequency data to enhance forecasts.
 3. **Bayesian Information Criterion (BIC)**: Determines the lag-order of variables.
+4. **Cross-validation for Time Series**: does not use future information compared to the traditional *k*-fold CV.
 
 ### Results (Project 3)
 - **U-MIDAS Models**: Performed the best overall, especially during economic crises (2008 and 2020).
