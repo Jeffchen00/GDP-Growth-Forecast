@@ -1,59 +1,77 @@
-# GDP Growth Forecast - A Vector Autoregression Approach
+# GDP Growth Forecast - A Multi-Approach Analysis
 
-This project forecasts the US real GDP growth using autoregression (AR) and vector autoregression (VAR) models based on historical economic data from 1959Q1 to 2021Q4. It analyzes different economic indicators and compares forecasting performances across models.
+**Projects by Chang-Chia Chen and collaborators: Ana Sofia Salinas Cantu, Semen Kuznetskiy**
+
+This repository contains three distinct projects aimed at forecasting US GDP growth. The approaches span from traditional time series models (autoregression and vector autoregression) to machine learning techniques (regression trees and random forests) and advanced mixed-data sampling methods (MIDAS). 
 
 ## Project Overview
-- **Objective**: Predict the US GDP growth one-quarter ahead using both AR and VAR models, utilizing historical economic variables such as CPI, Unemployment Rate, S&P 500 index, and others.
-- **Tools**: R language for statistical modeling and visualization.
+- **Objective**: Predict US GDP growth using multiple models and methods to compare forecast accuracy and robustness.
+- **Tools**: R programming language for statistical modeling, machine learning, and data visualization.
 
 ## Data Sources
-The data is derived from the [**FRED-QD database**](https://research.stlouisfed.org/econ/mccracken/fred-databases/) from the Federal Reserve Bank of St. Louis. The key variables used include:
-- GDPC1 (Real GDP)
-  - %GDPC1 (Real GDP growth)
-- CPIAUCSL (Consumer Price Index)
-  - %CPIAUCSL (Consumer Price Index growth)
-- M1REAL (Real M1 Money Stock)
-  - %M1REAL (Real M1 Money Stock growth)
-- S&P 500 (S&P 500 Index)
-  - %S&P 500 (S&P 500 Index growth)
-- CUMFNS (Capacity Utilization Rate)
-- UNRATESTx (Unemployment Rate less than 27 weeks)
-- FEDFUNDS (Federal Funds Rate)
+Data is sourced from the **FRED-QD** and **FRED-MD** databases at the [Federal Reserve Bank of St. Louis](https://research.stlouisfed.org/econ/mccracken/fred-databases/). Key variables used across all projects include:
+- Real Gross Domestic Product (GDP)
+- Consumer Price Index (CPI)
+- Unemployment Rate (UnRate)
+- S&P 500 Index
+- Capacity Utilization (CapUti)
+- Federal Funds Rate (FedFunds)
+- Real M1 and M2 Money Stock
 
-Growth $g$ of a variable $x$ at time $t$ is calculated by:
+## Project 1: Vector Autoregression (VAR) Approach
+1. **Autoregressive (AR) Model**: Predicts future GDP growth using past values.
+2. **Vector Autoregressive (VAR) Model**: Incorporates additional economic variables for enhanced predictions.
+3. **Granger Causality**: Determines predictive power of variables.
+4. **Akaike Information Criterion (AIC)**: Selects the best model lag length.
 
-$$g_{x,t} = \frac{x_t - x_{t-1}}{x_{t-1}}\times 100$$
+### Results (Project 1)
+- VAR models generally outperformed AR models in periods of economic fluctuation.
+- Models struggled during the COVID-19 pandemic due to unexpected shocks.
 
-![descriptive analysis](1.png)
+## Project 2: Machine Learning Approach
+1. **Regression Trees**: A tree-based model that uses economic variables to predict GDP growth.
+2. **Random Forests**: An ensemble of decision trees for more robust predictions.
+3. **Permutation Variable Importance (PVI)**: Assesses the relative importance of input variables.
 
-## Key Methods
-1. **Autoregressive (AR) Model**: A simple linear model using the past GDP growth values to predict future values.
-2. **Vector Autoregressive (VAR) Model**: This uses multiple variables (GDP, CPI, etc.) to predict future GDP growth.
-3. **Granger Causality Analysis**: Determines which variables have predictive power over GDP growth.
-4. **Akaike Information Criterion (AIC)**: Used to select the best lag-order for the VAR model.
+### Results (Project 2)
+- Random forests outperformed regression trees overall but still struggled during economic shocks.
+- AR and VAR models provided stronger performance when sufficient training data was available.
 
-## Results
-All variables are assumed to be stationary, i.e., without any trend or seasonality.
-- The AR(1) model performed well for relatively stable periods, while the VAR models were more effective during economic fluctuations.
-- The VAR(1) and VAR(p) models struggled during extreme events like the 2020 COVID-19 pandemic due to exaggerated fluctuations in variables.
-  ![AR(1) results](2.png)
-  ![VAR(1) results](3.png)
-  ![VAR(3) results](4.png)
+## Project 3: Nowcasting with Unrestricted MIDAS (U-MIDAS)
+1. **U-MIDAS**: Forecasts GDP growth using monthly economic data while considering lagged effects of both quarterly and monthly variables.
+2. **Random Forest (with MIDAS variables)**: Uses monthly frequency data to enhance forecasts.
+3. **Bayesian Information Criterion (BIC)**: Determines the lag-order of variables.
 
+### Results (Project 3)
+- **U-MIDAS Models**: Performed the best overall, especially during economic crises (2008 and 2020).
+- **Random Forest Models**: Showed slight improvements when combined with monthly data but struggled to handle extreme events.
+- Including monthly data from the FRED-MD database significantly improved the forecasts compared to the previous projects.
 
 ## Requirements
 - **R**: Version 4.1.2 or higher.
 - **R Packages**:
-  - `tseries`: For time series analysis.
-  - `vars`: For vector autoregression.
+  - `tseries`: Time series analysis.
+  - `vars`: Vector autoregression.
+  - `rpart`: Regression trees.
+  - `randomForest`: Random forests.
+  - `midasr`: MIDAS regression for mixed-frequency data.
 
 ## How to Run
-1. Download the dataset from the FRED-QD database and prepare it as described in the project report.
-2. Run the `main.R` script to generate forecasts, plots, and analysis results.
+1. Download the datasets from FRED-QD and FRED-MD.
+2. Run the `main.R`, `style.R`, and `plot.R` scripts for data processing, model execution, and visualization.
 
 ## Files in the Repository
-- **main.R**: The R script for forecasting and analysis.
-  
-## Conclusion
-The project explores different models for GDP forecasting and highlights the strengths of each under various economic conditions. It also suggests future improvements, such as incorporating more real-time variables.
+- **main.R**: The main script for model execution and analysis across all three projects.
+- **style.R**: Helper functions for improved visualizations.
+- **plot.R**: Code for generating specific plots used in Project 3.
+- **Project_1.pdf**: Detailed results and methods for Project 1 (VAR).
+- **Project_2.pdf**: Results and analysis for Project 2 (machine learning).
+- **Project_3.pdf**: Results for the MIDAS-based approach in Project 3.
+- **CS_2022_p3.pdf**: Extended report for Project 3.
 
+## Conclusion
+This collection of projects highlights the evolution of forecasting methods, from traditional time series models to more complex machine learning and mixed-frequency models. While traditional models perform well in stable conditions, machine learning models like random forests show potential when dealing with complex interactions between variables. The introduction of U-MIDAS models significantly improves performance, especially during economic crises.
+
+## Future Work
+- Consider the inclusion of additional economic variables such as personal consumption expenditures.
+- Explore other variants of MIDAS models, such as ADL-MIDAS.
