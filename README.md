@@ -18,6 +18,8 @@ The data is derived from the **FRED-QD database** from the Federal Reserve Bank 
 - UNRATESTx (Unemployment Rate less than 27 weeks)
 - FEDFUNDS (Federal Funds Rate)
 
+![GDP Forecast Plot](descriptive analysis.pdf)
+
 ## Key Methods
 1. **Autoregressive (AR) Model**: A simple linear model using the past GDP growth values to predict future values.
 2. **Vector Autoregressive (VAR) Model**: This uses multiple variables (GDP, CPI, etc.) to predict future GDP growth.
