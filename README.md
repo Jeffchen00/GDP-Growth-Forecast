@@ -30,7 +30,8 @@ Data is sourced from the **FRED-QD** and **FRED-MD** databases at the [Federal R
 ### Results (Project 1)
 - VAR models generally outperformed AR models in periods of economic fluctuation.
 - Models struggled during the COVID-19 pandemic due to unexpected shocks.
-![[residuals of AR and VAR model](P2/plot/res_AR.pdf)](https://github.com/Jeffchen00/GDP-Growth-Forecast/blob/9cf2e9efbbcc93d8c9e68566a5619f3f90908de4/P2/plot/res_AR.pdf)
+
+![P1 results](readmePlot/res_AR.png)
 
 ## Project 2: Machine Learning Approach
 1. **Regression Trees**: A tree-based model that uses economic variables to predict GDP growth.
@@ -41,6 +42,9 @@ Data is sourced from the **FRED-QD** and **FRED-MD** databases at the [Federal R
 - Random forests outperformed regression trees overall but still struggled during economic shocks.
 - AR and VAR models provided stronger performance when sufficient training data was available.
 
+![P2 results 1](readmePlot/res_RT.png)
+![P2 results 2](readmePlot/res_RF.png)
+
 ## Project 3: Nowcasting with Unrestricted MIDAS (U-MIDAS)
 1. **U-MIDAS**: Forecasts GDP growth using monthly economic data while considering lagged effects of both quarterly and monthly variables.
 2. **Random Forest (with MIDAS variables)**: Uses monthly frequency data to enhance forecasts.
@@ -50,6 +54,9 @@ Data is sourced from the **FRED-QD** and **FRED-MD** databases at the [Federal R
 - **U-MIDAS Models**: Performed the best overall, especially during economic crises (2008 and 2020).
 - **Random Forest Models**: Showed slight improvements when combined with monthly data but struggled to handle extreme events.
 - Including monthly data from the FRED-MD database significantly improved the forecasts compared to the previous projects.
+
+![P3 results 1](readmePlot/res_um.png)
+![P3 results 2](readmePlot/res_um_r.png)
 
 ## Requirements
 - **R**: Version 4.1.2 or higher.
