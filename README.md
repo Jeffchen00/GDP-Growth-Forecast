@@ -11,7 +11,7 @@ Data is sourced from the **FRED-QD** and **FRED-MD** databases at the [Federal R
 - Real Gross Domestic Product (GDP)
 - Consumer Price Index (CPI)
 - Unemployment Rate (UnRate)
-- S&P 500 Index
+- S&P 500 Index (SP500)
 - Capacity Utilization (CapUti)
 - Federal Funds Rate (FedFunds)
 - Real M1 and M2 Money Stock
