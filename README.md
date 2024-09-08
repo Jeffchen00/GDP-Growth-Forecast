@@ -1,7 +1,5 @@
 # GDP Growth Forecast - A Vector Autoregression Approach
 
-**Project by Chang-Chia Chen and collaborators: Ana Sofia Salinas Cantu, Semen Kuznetskiy**
-
 This project forecasts the US real GDP growth using autoregression (AR) and vector autoregression (VAR) models based on historical economic data from 1959Q1 to 2021Q4. It analyzes different economic indicators and compares forecasting performances across models.
 
 ## Project Overview
