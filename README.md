@@ -55,6 +55,7 @@ Data is sourced from the **FRED-QD** and **FRED-MD** databases at the [Federal R
 
 ![P3 results 1](readmePlot/res_um.png)
 ![P3 results 2](readmePlot/res_um_r.png)
+![P3_result_3](readmePlot/res_rf.png)
 ![results 1](readmePlot/RMSFE.png)
 
 ## Conclusion
