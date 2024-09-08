@@ -18,7 +18,7 @@ The data is derived from the **FRED-QD database** from the Federal Reserve Bank 
 - UNRATESTx (Unemployment Rate less than 27 weeks)
 - FEDFUNDS (Federal Funds Rate)
 
-![GDP Forecast Plot](descriptive analysis.pdf)
+![descriptive analysis](descriptive analysis.png)
 
 ## Key Methods
 1. **Autoregressive (AR) Model**: A simple linear model using the past GDP growth values to predict future values.
