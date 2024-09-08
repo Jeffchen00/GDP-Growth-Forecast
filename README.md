@@ -56,19 +56,6 @@ Data is sourced from the **FRED-QD** and **FRED-MD** databases at the [Federal R
   - `randomForest`: Random forests.
   - `midasr`: MIDAS regression for mixed-frequency data.
 
-## How to Run
-1. Download the datasets from FRED-QD and FRED-MD.
-2. Run the `main.R`, `style.R`, and `plot.R` scripts for data processing, model execution, and visualization.
-
-## Files in the Repository
-- **main.R**: The main script for model execution and analysis across all three projects.
-- **style.R**: Helper functions for improved visualizations.
-- **plot.R**: Code for generating specific plots used in Project 3.
-- **Project_1.pdf**: Detailed results and methods for Project 1 (VAR).
-- **Project_2.pdf**: Results and analysis for Project 2 (machine learning).
-- **Project_3.pdf**: Results for the MIDAS-based approach in Project 3.
-- **CS_2022_p3.pdf**: Extended report for Project 3.
-
 ## Conclusion
 This collection of projects highlights the evolution of forecasting methods, from traditional time series models to more complex machine learning and mixed-frequency models. While traditional models perform well in stable conditions, machine learning models like random forests show potential when dealing with complex interactions between variables. The introduction of U-MIDAS models significantly improves performance, especially during economic crises.
 
