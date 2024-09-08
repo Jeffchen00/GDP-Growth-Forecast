@@ -1,6 +1,6 @@
 # GDP Growth Forecast - A Multi-Approach Analysis
 
-This repository contains three distinct projects aimed at forecasting US GDP growth. The approaches span from traditional time series models (autoregression and vector autoregression) to machine learning techniques (regression trees and random forests) and advanced mixed-data sampling methods (MIDAS). 
+This repository contains three distinct projects aimed at forecasting US GDP growth. The approaches span from traditional time series models (autoregression and vector autoregression) to machine learning techniques (regression trees and random forests) and advanced mixed-data sampling methods ([MIDAS](https://www.bundesbank.de/resource/blob/703636/67ebc41ad0284bfe43aa7b6cd2c000f6/mL/2011-12-30-dkp-35-data.pdf)). 
 
 ## Project Overview
 - **Objective**: Predict US GDP growth using multiple models and methods to compare forecast accuracy and robustness.
