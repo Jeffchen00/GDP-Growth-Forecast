@@ -22,6 +22,9 @@ The data is derived from the [**FRED-QD database**](https://research.stlouisfed.
 - UNRATESTx (Unemployment Rate less than 27 weeks)
 - FEDFUNDS (Federal Funds Rate)
 
+Growth is calculated by:
+$$g_{x,t} = \frac{x_t - x_{t-1}}{x_{t-1}}\times 100$$
+
 ![descriptive analysis](1.png)
 
 ## Key Methods
