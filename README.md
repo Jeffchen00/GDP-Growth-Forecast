@@ -17,8 +17,8 @@ Data is sourced from the **FRED-QD** and **FRED-MD** databases at the [Federal R
 - Capacity Utilization (CapUti)
 - Federal Funds Rate (FedFunds)
 - Real M1 and M2 Money Stock
-![Descriptive Analysis 2](readmePlot/des001.png)
-![Descriptive Analysis 1](readmePlot/des002.png)
+![Descriptive Analysis_1](readmePlot/des001.png)
+![Descriptive Analysis_2](readmePlot/des002.png)
 
 ## Project 1: Vector Autoregression (VAR) Approach
 1. **Autoregressive (AR) Model**: Predicts future GDP growth using past values.
