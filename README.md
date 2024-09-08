@@ -18,7 +18,7 @@ The data is derived from the [**FRED-QD database**](https://research.stlouisfed.
 - UNRATESTx (Unemployment Rate less than 27 weeks)
 - FEDFUNDS (Federal Funds Rate)
 
-![descriptive analysis](descriptive_analysis.png)
+![descriptive analysis](1.png)
 
 ## Key Methods
 1. **Autoregressive (AR) Model**: A simple linear model using the past GDP growth values to predict future values.
@@ -28,7 +28,10 @@ The data is derived from the [**FRED-QD database**](https://research.stlouisfed.
 
 ## Results
 - The AR(1) model performed well for relatively stable periods, while the VAR models were more effective during economic fluctuations.
+  ![AR(1) results](2.png)
 - The VAR(1) and VAR(p) models struggled during extreme events like the 2020 COVID-19 pandemic due to exaggerated fluctuations in variables.
+  ![VAR(1) and VAR(3) results](3.png)
+
 
 ## Requirements
 - **R**: Version 4.1.2 or higher.
