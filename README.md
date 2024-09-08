@@ -54,15 +54,7 @@ Data is sourced from the **FRED-QD** and **FRED-MD** databases at the [Federal R
 
 ![P3 results 1](readmePlot/res_um.png)
 ![P3 results 2](readmePlot/res_um_r.png)
-
-## Requirements
-- **R**: Version 4.1.2 or higher.
-- **R Packages**:
-  - `tseries`: Time series analysis.
-  - `vars`: Vector autoregression.
-  - `rpart`: Regression trees.
-  - `randomForest`: Random forests.
-  - `midasr`: MIDAS regression for mixed-frequency data.
+![results 1](readmePlot/RMSFE.png)
 
 ## Conclusion
 This collection of projects highlights the evolution of forecasting methods, from traditional time series models to more complex machine learning and mixed-frequency models. While traditional models perform well in stable conditions, machine learning models like random forests show potential when dealing with complex interactions between variables. The introduction of U-MIDAS models significantly improves performance, especially during economic crises.
