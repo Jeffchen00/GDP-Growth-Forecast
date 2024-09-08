@@ -30,7 +30,8 @@ The data is derived from the [**FRED-QD database**](https://research.stlouisfed.
 - The AR(1) model performed well for relatively stable periods, while the VAR models were more effective during economic fluctuations.
   ![AR(1) results](2.png)
 - The VAR(1) and VAR(p) models struggled during extreme events like the 2020 COVID-19 pandemic due to exaggerated fluctuations in variables.
-  ![VAR(1) and VAR(3) results](3.png)
+  ![VAR(1) results](3.png)
+  ![VAR(3) results](4.png)
 
 
 ## Requirements
