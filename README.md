@@ -1,7 +1,5 @@
 # GDP Growth Forecast - A Multi-Approach Analysis
 
-**Projects by Chang-Chia Chen and collaborators: Ana Sofia Salinas Cantu, Semen Kuznetskiy**
-
 This repository contains three distinct projects aimed at forecasting US GDP growth. The approaches span from traditional time series models (autoregression and vector autoregression) to machine learning techniques (regression trees and random forests) and advanced mixed-data sampling methods (MIDAS). 
 
 ## Project Overview
